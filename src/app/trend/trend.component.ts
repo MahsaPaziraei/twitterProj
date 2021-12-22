@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-trend',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./trend.component.css']
 })
 export class TrendComponent implements OnInit {
-
+  @Input() text: any;
   constructor() { }
 
   ngOnInit(): void {

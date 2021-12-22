@@ -1,20 +1,23 @@
 :host button {
-    border-radius: 1rem;
+    border-radius: 3rem;
     margin: 0.3rem;
+    font-size: 1vw;
+    line-height: 3vw;
 }
 
 i {
-    font-size: 1.3rem;
-    margin-right: 1rem;
+    font-size: 1.5vw;
+    margin-right: 1vw;
 }
 
 .twitterIcon {
     color: var(--blue);
-    font-size: 1.5rem;
+    font-size: 2.5vw;
     margin-left: 0.5rem;
 }
 
 .tweetBtn {
     background-color: var(--blue);
     color: var(--white);
+    width: 80%;
 }
