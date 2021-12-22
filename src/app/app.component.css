@@ -4,9 +4,9 @@
     display: block;
     overflow: hidden;
 }
-
+/*
 app-header {
-    /*height: 4rem;*/
+
     padding: 1rem 0;
     display: block;
     background-color: #B9AFD4;
@@ -25,7 +25,7 @@ app-trend {
     background-color: #FFF8DE;
     padding-left: 0;
 }
-
+*/
 :root {
     --blue: rgb(29, 155, 240);
     --white: #ffffff;
