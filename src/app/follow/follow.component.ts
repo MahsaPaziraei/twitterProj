@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-follow',
@@ -7,9 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class FollowComponent implements OnInit {
 
-  constructor() { }
+  constructor(private _snackBar: MatSnackBar) { }
 @Input() person: any;
   ngOnInit(): void {
   }
-
+  openSnackBar(event:string){
+    this._snackBar.open(event,'close');
+  }
 }

@@ -1,3 +1,4 @@
+import { TrendService } from './trend.service';
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
@@ -7,25 +8,11 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class TrendComponent implements OnInit {
   @Input() text: any;
-  constructor() { }
+  followList:any;
+  constructor(private trendService:TrendService) { }
 
   ngOnInit(): void {
+    this.followList= this.trendService.getFollowList();
   }
-  followList = [
-    {
-      name:"Mahsa Pz",
-      id:"@mahsaPz",
-      img: "../../assets/img/1.png"
-    },
-    {
-      name:"Mahsa Pz",
-      id:"@mahsaPz",
-      img: "../../assets/img/2.png"
-    },
-    {
-        name:"Mahsa Pz",
-    id:"@mahsaPz",
-    img: "../../assets/img/3.png"
-    }
-  ]
+
 }

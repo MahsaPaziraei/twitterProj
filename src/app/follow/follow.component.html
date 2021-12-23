@@ -1,6 +1,6 @@
 <div class="row">
   <div class="col-12 d-flex justify-content-center">
-    <mat-card class="tweet">
+    <mat-card>
       <div class="row">
         <div class="col-3">
           <div class="avatarcontainer">
@@ -12,7 +12,7 @@
           <p>{{person.id}}</p>
         </div>
         <div class="col-4">
-          <button mat-button color="primary">Follow</button>
+          <button mat-button color="primary" (click)="openSnackBar('Follow')">Follow</button>
         </div>
 
       </div>

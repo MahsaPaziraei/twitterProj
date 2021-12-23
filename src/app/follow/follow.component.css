@@ -1,37 +1,10 @@
-.tweeterIcon i{
-  font-size: 3vw;
-  opacity: 0.6;
-}
-
-.avatarcontainer {
-    position: relative;
-    margin: auto;
-    width: 3rem;
-    height: 3rem;
-    display: block;
-}
-
-.avatarcontainer:hover>.hover {
-    opacity: 1;
-}
 
 .avatar {
     width: 100%;
     border: 8px solid #5cc0ff;
     border-radius: 50%;
-    overflow: hidden;
-    position: relative;
 }
 
-.avatar img {
-    width: 65px;
-    height: 65px;
-}
-
-.avatar:hover {
-    opacity: 1;
-    cursor: pointer;
-}
 
 mat-card {
     width: 100%;
@@ -40,11 +13,6 @@ mat-card {
 
 i {
     font-size: 1.5vw;
-}
-
-h2{
-  padding: 0;
-  margin: 0;
 }
 
 button{

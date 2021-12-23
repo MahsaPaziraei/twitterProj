@@ -4,7 +4,7 @@
     </div>
     <div class="row">
         <div class="col-12">
-            <button mat-raised-button>
+            <button mat-raised-button (click)="openSnackBar('Home')">
                 <i class="fa fa-home"></i>
                 <span>Home</span>
             </button>
@@ -12,27 +12,27 @@
     </div>
 
 
-    <button mat-raised-button>
+    <button mat-raised-button (click)="openSnackBar('Explore')">
         <i class="fa fa-wpexplorer"></i>
         <span>Explore</span>
     </button>
-    <button mat-raised-button>
+    <button mat-raised-button (click)="openSnackBar('Notifications')">
         <i class="fa fa-bell"></i>
         <span>Notifications</span>
     </button>
-    <button mat-raised-button>
+    <button mat-raised-button (click)="openSnackBar('Messages')">
         <i class="fa fa-envelope"></i>
         <span>Messages</span>
     </button>
-    <button mat-raised-button>
+    <button mat-raised-button (click)="openSnackBar('Profile')">
         <i class="fa fa-user-circle-o"></i>
         <span>Profile</span>
     </button>
-    <button mat-raised-button>
+    <button mat-raised-button (click)="openSnackBar('More')">
         <i class="fa fa-ellipsis-h"></i>
         <span>More</span>
     </button>
-    <button mat-raised-button class="tweetBtn">
+    <button mat-raised-button class="tweetBtn" (click)="openSnackBar('tweet')">
         <span>tweet</span>
     </button>
 </div>

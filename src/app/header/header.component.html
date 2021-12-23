@@ -1,21 +1,15 @@
 
 <div class="row">
-
   <div class="col-4 d-flex justify-content-evenly align-items-center">
-
-    <a mat-flat-button href="https://www.google.com/" target="_blank">About</a>
-    <a mat-flat-button href="https://www.google.com/" target="_blank">Help</a>
+    <button mat-flat-button (click)="openSnackBar('About')">About</button>
+    <button mat-flat-button (click)="openSnackBar('Help')">Help</button>
   </div>
 <div class="col-8 ">
       <mat-form-field class="example-full-width">
-        <span matPrefix> </span>
         <input matInput placeholder="Search" name="search" [(ngModel)]="search">
         <button matSuffix mat-button>
             <mat-icon>search</mat-icon>
         </button>
     </mat-form-field>
 </div>
-
-
-
 </div>

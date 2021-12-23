@@ -1,3 +1,4 @@
+import { MainService } from './main.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,22 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private mainService:MainService) { }
+  tweets:any;
   ngOnInit(): void {
+this.tweets = this.mainService.getTweets();
   }
-  tweets = [
-    {
-      text: "What did the cheese say when it looked in the mirror?",
-      img: "../../assets/img/1.png"
-    },
-    {
-      text: "What kind of cheese do you use to disguise a small horse?",
-      img: "../../assets/img/2.png"
-    },
-    {
-      text: "fvvvvvvvvvvvvvvvvvvvvv",
-      img: "../../assets/img/3.png"
-    }
-  ]
+
 }
