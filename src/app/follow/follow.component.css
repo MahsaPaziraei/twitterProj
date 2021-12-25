@@ -1,10 +1,16 @@
-
 .avatar {
     width: 100%;
     border: 8px solid #5cc0ff;
     border-radius: 50%;
 }
 
+.avatarcontainer {
+    position: relative;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+    display: block;
+}
 
 mat-card {
     width: 100%;
@@ -15,13 +21,15 @@ i {
     font-size: 1.5vw;
 }
 
-button{
-  padding: 0 !important;
+button {
+    padding: 0 !important;
 }
-.name{
-  font-weight: bold;
+
+.name {
+    font-weight: bold;
 }
-p{
-  margin: 0;
-  padding: 0;
+
+p {
+    margin: 0;
+    padding: 0;
 }
