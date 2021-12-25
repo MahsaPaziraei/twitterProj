@@ -1,3 +1,5 @@
-<div class="row" *ngFor="let item of followList">
-  <app-follow class="d-block" [person]="item"></app-follow>
+<div class="row justify-content-center">
+    <div class="col-6 col-md-12 d-flex justify-content-center my-2" *ngFor="let item of followList">
+        <app-follow class="d-block" [person]="item"></app-follow>
+    </div>
 </div>
